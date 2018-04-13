@@ -1,7 +1,7 @@
 import spock.lang.Specification
 import groovy.xml.StreamingMarkupBuilder
 
-class Autorizador extends Specification {
+class LibrarySpec extends Specification {
 
 	//https://www.genbetadev.com/herramientas/testeando-tus-aplicaciones-java-con-spock-tests-mas-expresivos-faciles-de-leer-y-mantener
 	void 'invertir una cadena de texto'() {            // 2
