@@ -22,6 +22,7 @@ class AutorizadorSpec extends Specification {
 			println trama
     	when:
     		def echo = classUnderTest.operaciones(canal,parametros)
+			println "respuesta: $echo"
     		def Messages = new XmlSlurper().parseText(echo) 
     	then: 
     		Messages.TXN_FIN_RES.MESSAGE_TYPE.@value == '0810'

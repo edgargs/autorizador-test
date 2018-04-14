@@ -27,8 +27,9 @@ public class Autorizador {
 			e.printStackTrace();
 		}
 		
-		switch(strMessageType){
-			case "0800": trama = messageEcho(strTrace);
+		System.out.println("Message type: " + strMessageType);
+		if(strMessageType.equals("0800")){
+			trama = messageEcho(strTrace);
 		}
 	    
 		return trama;
